@@ -17,4 +17,14 @@ public class BubbleSortTests {
         assertArrayEquals(expected, actual);
 
     }
+
+    @Test
+    @DisplayName("Given an array with integers 50,40,30,20,10 Returns array 10,20,30,40,50")
+    public void bubbleSortWithInputArrayOfIntegers5040302010_Returns1020304050() {
+        BubbleSort sort = new BubbleSort();
+        int[] expected = {10,20,30,40,50};
+        int[] actual = sort.bubbleSort(new int[] {50,40,30,20,10});
+        assertArrayEquals(expected, actual);
+
+    }
 }
